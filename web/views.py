@@ -8,17 +8,17 @@ def home():
 
 @views.route("/aboutus")
 def aboutus():
-    return "about us page"
+    return render_template('aboutus.html')
 
 
 @views.route("/services")
 def services():
-    return "service us page"
+    return render_template('services.html')
 
 @views.route("/contact")
 def contact():
-    return "contact us page"
+    return render_template('contact.html')
 
 @views.route("/blog")
 def blog():
-    return "blog us page"
+    return render_template('blog.html')

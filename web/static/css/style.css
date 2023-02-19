@@ -224,13 +224,13 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(static/images/banner-bg.png);
     height: auto;
     background-size: 100%;
 }
 
 .bg-light {
-    background-image: url(../images/header-bg.png);
+    background-image: url(static/images/header-bg.png);
     background-color: transparent !important;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -716,17 +716,17 @@ textarea#comment::placeholder {
     float: left;
     margin-top: 40px;
 }
-.send_bt a {
+.send_bt{
     width: 100%;
     float: left;
-    background-color: #13a25d;
+    background-color: #13a25d !important;
     color: #ffffff;
     text-align: center;
     padding: 14px 0px;
     font-size: 16px;
    font-family: 'Roboto', sans-serif;
 }
-.send_bt a:hover {
+.send_bt :hover {
     background-color: #ffffff;
     color: #000;
 }
