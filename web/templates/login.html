@@ -1,16 +1,26 @@
 {% extends "base.html" %} {% block title %} Login {% endblock %}
 {% block content %}
  <!-- contact section start -->
- <div class="contact_section layout_padding margin_top90">
+ <div class="contact_section layout_padding">
     <div class="container">
        <h1 class="contact_taital">Login</h1>
-       <p class="contact_text">majority have suffered alteration in some form, by injected humour, or </p>
+       <p class="contact_text">Welcome </p>
+       {% with messages = get_flashed_messages(with_categories=true) %}
+       {% if messages %}
+          {% for category, message in messages %}
+              {% if category == "success" %}
+              <p class="contact_text">{{ message}}</p>
+              {% else %}
+              <p class="contact_text" style="color: red;">{{ message}}</p>
+
+              {% endif %}
+          {% endfor %}
+       {% endif %}
+     {%  endwith %}
        <div class="contact_section_2 layout_padding">
         <form class="row" method="post">
             <div class="col-md-6">
                <div class="contact_main">
-                  <input type="text" class="mail_text" placeholder="Full Name" name="Full Name">
-                  <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number">
                   <input type="text" class="mail_text" placeholder="Email" name="Email">
                   <input type="password" class="mail_text" placeholder="password" name="password">
                   <input class="send_bt" type="submit" value="Login">
