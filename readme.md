@@ -1,6 +1,6 @@
-# PYTHONE PROJECT WITH FLASk, SQLAlchemy
+# PYTHON PROJECT WITH FLASk, SQLAlchemy
 
-## TECHNOLOGIES - Pythone, CSS, Javascript
+## TECHNOLOGIES - Python, CSS, Javascript
 ## Goal of Website 
 User should register and being able to login in, once there have loging there can write a post, they should be edit, delete and update their post,
 
